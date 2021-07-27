@@ -1,0 +1,106 @@
+.section.hero {
+  background-color: #7ac2bb;
+  height: calc(100vh + 1px);
+  margin-top: -0.5px;
+  min-height: 40vw;
+  position: relative;
+  width: 100%;
+}
+
+/* @media only screen and (max-width: 767px) {
+  .section.hero {
+    height: 0;
+    padding-top: 277.777777%;
+  }
+  .section.all {
+    height: 0;
+    padding-top: 277.777777%;
+  }
+  .wrapper {
+    height: 0;
+    margin-top: -0.5px;
+    padding-top: 66.66%;
+    position: relative;
+    width: 100%;
+  }
+} */
+.section.all {
+  height: 0;
+  margin-top: -0.5px;
+  padding-top: 66.66%;
+  position: relative;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.video {
+  display: block;
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.text-overlay {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.text-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+}
+.text-wrapper {
+  position: absolute;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+}
+.scroll {
+  position: absolute;
+  /* background: red; */
+  bottom: 30px;
+  left: 50%;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+}
+.mouse {
+  background-image: url("../svg/computer-mouse-svgrepo-com.svg");
+  color: aliceblue;
+  width: 80px;
+  height: 80px;
+  animation: mouseUp 1.5s infinite;
+}
+@media only screen and (max-width: 767px) {
+  .section.all {
+    padding-top: 277.777777%;
+  }
+}
+@keyframes mouseUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
